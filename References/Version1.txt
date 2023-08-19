@@ -1,0 +1,75 @@
+APIs
+1. UserAuth APIs -> /api/v1/userActivity
+2. Project Creation API
+3. Task Creation API
+
+Collections
+1. PmsUsers
+    - Contains all user related data
+2. PmsExtras
+    - Contains all extras like sessions and other extra stuff
+3. ProjectMaster
+    - Contains all project related data inc. tasks
+4. Sprints
+    -  Contains all sprints data
+5. TasksLogs
+    - Contains all tasks related Logs
+6. ContentSchema (Optional)
+    - Contains all website content
+7. Lookups (if required)
+
+Functionalities:
+
+A. Create Project:
+    Frontend Fields:
+        - BasicProjectDetails (ProjectName | ProjectLabel (ex - LD/LA) | ProjectMilestones | PriorityTagging | TimeTracking (Setting Deadlines))
+        - TaskCreation
+        - AddMembers
+        - SprintPlanning
+        - ClientDetails
+        - Expense
+    Backend Fields
+        - ProjectID (UniqueID randomly generated - alphanumeric - 5digit)
+        - CreatedOn (current Date)
+
+B. Task Creation:
+    Frontend Fields:
+        - TaskName
+        - TaskID
+        - TaskDescription
+        - AllocatedTo
+        - AllocatedBy
+        - DeadlineTagging
+        - ProjectTagging
+        - SprintTagging
+        - PriorityTagging
+        - SubTaskCreation
+        - TimeTracking
+        - Attachments
+        - Comments
+    Backend Fields:
+        - CreatedOn
+
+Project:
+ - projects
+ - labels
+ - milestone
+ - project members
+ - client
+ - expenses
+ - project_templates
+ - 
+
+Tasks: 
+ - Tasks
+ - comments
+ - attachments
+ - labels
+ - priorities
+ - subtasks
+ - time_tracking
+ - 
+
+Attachments: 
+ - attachments
+ - file_versions
