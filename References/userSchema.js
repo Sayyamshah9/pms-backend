@@ -8,11 +8,11 @@ const userSchema = {
   projects: [
     {
       as: "Developer",
-      projectId: ObjectId("id"),
+      projectId: "ObjectId",
       epics: [
         {
-          epicId: ObjectId("id"),
-          tasks: [ObjectId("id")],
+          epicId: "ObjectId",
+          tasks: ["ObjectId"],
         },
       ],
     },

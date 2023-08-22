@@ -1,4 +1,5 @@
 const express = require("express");
+const { createConnection } = require("./DataLayer/dbQueries");
 const app = express();
 
 const PORT = 3001;
@@ -15,3 +16,5 @@ app.get("/", (req, res) => {
 app.listen(PORT, () => {
   console.log("Server is Up and Running");
 });
+
+createConnection();
