@@ -3,25 +3,33 @@ PMS-Features-Checklist
 GENERAL:
 ____________
 
-- Code Refactor - 
 - Project Init - ✔
-- Session Setup - 
+- JWT Authentication - ✔
+- Response Sanitization - ✔
+- JWT Refactor - 
+- Write Generic Find | Update | Create | Delete Functions  - 
 - CORS Setup - 
-- JWT Authentication - 
+- Babel Setup -
+- Session Setup - 
 - Request & Response Encrtyption -
+- Code Refactor - 
 
 USER API:
 ____________
 
 - User OnBoarding - ✔
 - User Login - ✔
-- Password Hashing - 
+- Password Hashing - ✔
+- Check for Duplicate Entries & only for nonlocal envs - ✔
+- User Read (p2) - 
 
 PROJECT API:
 ____________
 
 - Create Project - 
+- Read Project - 
 - Update Project - 
+- Delete Project - 
 
 EPIC | STORY | TASKS:
 ____________

@@ -1,7 +1,7 @@
-const getUserRecord = require("../BusinessLayer/getUserRecord");
+const getUserRecord = require("../BusinessLayer/userGet");
 const userLogin = require("../BusinessLayer/userLogin");
 const userOnboarding = require("../BusinessLayer/userOnboarding");
-const CONSTANTS = require("../CommonLayer/Contants");
+const CONSTANTS = require("../CommonLayer/Constants");
 
 const userActivityController = async (reqData) => {
   const { activityType, inputData } = reqData;
