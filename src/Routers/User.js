@@ -1,36 +1,16 @@
 const userActivityController = require("../ActivityLayer/userActivityController");
+const getUserAgentDetails = require("../CommonLayer/UserAgentDetails");
 
 const router = require("express").Router();
 
-router
-  .route("/")
-  .post(async (req, res) => {
-    const reqData = req.body,
-      reqParams = req.params || "";
-    let response = null;
-    try {
-      response = await userActivityController(reqData);
-    } catch (error) {
-      console.log(error);
-    }
-    res.json({
-      data: response,
-      error: null,
-    });
-  })
-  .get(async (req, res) => {
-    const reqData = req.body;
-    reqData.reqParams = req?.query || {};
-    let response = null;
-    try {
-      response = await userActivityController(reqData);
-    } catch (error) {
-      console.log(error);
-    }
-    res.json({
-      data: response,
-      error: null,
-    });
-  });
+router.route("/").post(async (req, res) => {
+  let response = null;
+  const reqData = req.body;
+  reqData.inputData.userAgentDetails = getUserAgentDetails(
+    req.headers["user-agent"]
+  );
+  response = await userActivityController(reqData);
+  res.json(response);
+});
 
 module.exports = router;
