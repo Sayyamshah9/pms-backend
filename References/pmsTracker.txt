@@ -1,0 +1,44 @@
+PMS-Features-Checklist
+
+GENERAL:
+____________
+
+- Code Refactor - 
+- Project Init - ✔
+- Session Setup - 
+- CORS Setup - 
+- JWT Authentication - 
+- Request & Response Encrtyption -
+
+USER API:
+____________
+
+- User OnBoarding - ✔
+- User Login - ✔
+- Password Hashing - 
+
+PROJECT API:
+____________
+
+- Create Project - 
+- Update Project - 
+
+EPIC | STORY | TASKS:
+____________
+
+- Create -
+- Read - 
+- Update -
+- Delete - 
+
+LOGS:
+____________
+
+- Create Project Logs - 
+- Update Project Logs - 
+
+DATABASE:
+____________
+
+- Mongo Connection Setup - ✔ 
+- Mongo All Queries - ✔ 
