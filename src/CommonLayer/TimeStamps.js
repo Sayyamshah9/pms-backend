@@ -1,17 +1,17 @@
 class TimeStampsCls {
   constructor() {
-    (this.created_at = {}), (this.updated_at = {});
+    (this.createdOn = {}), (this.updatedOn = {});
   }
 
-  getCreatedAt() {
-    return (this.created_at = {
+  getCreatedOn() {
+    return (this.createdOn = {
       date: new Date().toISOString().split("T")[0],
       time: new Date().toISOString().split("T")[1],
     });
   }
 
-  getUpdatedAt() {
-    return (this.updated_at = {
+  getUpdatedOn() {
+    return (this.updatedOn = {
       date: new Date().toISOString().split("T")[0],
       time: new Date().toISOString().split("T")[1],
     });

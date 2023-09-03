@@ -25,13 +25,19 @@ const genToken = (_payload) => {
 const verifyToken = (_token) => {
   let decodedTkn;
   let tokenRes = {
-    isVerified: false,
+    isTknVerified: false,
     tokenPayload: "",
+    message: "",
   };
   let jwtSecret = CONSTANTS.SECRETS.JWT_SECRET;
-  decodedTkn = jwt.verify(_token, jwtSecret);
+  try {
+    decodedTkn = jwt.verify(_token, jwtSecret);
+  } catch (error) {
+    tokenRes.isTknVerified = false;
+    tokenRes.message = error;
+  }
   if (decodedTkn) {
-    tokenRes = { ...tokenRes, tokenPayload: decodedTkn, isVerified: true };
+    tokenRes = { ...tokenRes, tokenPayload: decodedTkn, isTknVerified: true };
   }
   return tokenRes;
 };

@@ -6,9 +6,15 @@ CONSTANTS.COLLECTIONS = {
 };
 
 CONSTANTS.ACTIVITY_TYPE = {
+  // User Activities
   USER_ONBOARDING: "user-onboarding",
   USER_LOGIN: "user-login",
   GET_USER_REC: "get-user-record",
+
+  // Project Activities
+  PROJECT_INIT: "project-init",
+  GET_REC: "get-record",
+  UPDATE_REC: "update-record",
 };
 
 CONSTANTS.SECRETS = {

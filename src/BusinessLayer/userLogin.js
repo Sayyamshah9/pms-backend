@@ -3,7 +3,6 @@ const ResponseCls = require("../CommonLayer/ResponseCls");
 const {
   verifyPassword,
   genToken,
-  verifyToken,
   getloginFltObj,
 } = require("../CommonLayer/helper");
 const { find } = require("../DataLayer/dbQueries");

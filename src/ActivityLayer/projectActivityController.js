@@ -1,20 +1,20 @@
 const getRecord = require("../BusinessLayer/getRecord");
 const projectInit = require("../BusinessLayer/projectInit");
-const projectRecordUpdate = require("../BusinessLayer/projectRecordUpdate");
+const projectRecUpdate = require("../BusinessLayer/projectRecordUpdate");
+const CONSTANTS = require("../CommonLayer/Constants");
 
-const projectActivityController = async (reqData) => {
-  const activityType = reqData?.activityType;
-  const reqIpData = reqData?.inputData || reqData?.reqParams || {};
+const projectActivityController = async (reqData, reqExtras) => {
+  const { activityType, inputData } = reqData;
 
   switch (activityType) {
-    case "project-initialization":
-      return await projectInit(reqIpData);
-    case "get-record":
-      return await getRecord(reqIpData);
-    case "update-record":
-      return await projectRecordUpdate(reqIpData);
+    case CONSTANTS.ACTIVITY_TYPE.PROJECT_INIT:
+      return await projectInit(inputData, reqExtras);
+    case CONSTANTS.ACTIVITY_TYPE.UPDATE_REC:
+      return await projectRecUpdate(inputData, reqExtras);
+    case CONSTANTS.ACTIVITY_TYPE.GET_REC:
+      return await getRecord(inputData, reqExtras);
     // case "delete-record":
-    //   return await projectInit(reqIpData);
+    //   return await projectInit(inputData);
   }
 };
 

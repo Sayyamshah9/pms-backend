@@ -1,3 +1,9 @@
+Important
+- You should not be using babel-node in production. It is unnecessarily heavy, with high memory usage due to the cache being stored in memory. You will also always experience a startup performance penalty as the entire app needs to be compiled on the fly
+
+
+--------------------------------------------------------------------------
+
 APIs
 1. UserAuth APIs -> /api/v1/userActivity
 2. Project Creation API
@@ -9,9 +15,7 @@ Collections
 2. PmsExtras
     - Contains all extras like sessions and other extra stuff
 3. ProjectMaster
-    - Contains all project related data inc. tasks
-4. Sprints
-    -  Contains all sprints data
+    - Contains all project related data inc. sprints | stories | tasks
 5. TasksLogs
     - Contains all tasks related Logs
 6. ContentSchema (Optional)
@@ -49,6 +53,19 @@ B. Task Creation:
         - Comments
     Backend Fields:
         - CreatedOn
+
+Journey:
+1. ProjectInit:
+    - Create Project -> Verify Token -> Update Owner Details -> get & update TimeStamps -> Create ObjectId if Any -> Store in DB
+
+2. SprintInit
+3. StoryInit
+4. TaskInit
+
+--------------------------------------------------------------------------
+// V2
+Manipulate DB Structuring accroding to multiple Organizations
+--------------------------------------------------------------------------
 
 Project:
  - projects

@@ -1,0 +1,138 @@
+{
+  "pId": "string",
+  "projectName": "string",
+  "description": "string",
+  "owner": {
+    "oId": " ObjectId(\"example\")",
+    "name": "John Doe",
+    "role": "administ",
+    "joinDate": "2023-03-08",
+    "dopoutDate": "2023-03-08",
+    "active": true
+  },
+  "projectMeta": {
+    "startDate": "date",
+    "endDate": "date",
+    "status": "string",
+    "estimatedTime": "Number",
+    "actualTime": "Number",
+    "createdOn": "date",
+    "createdBy": "Story creator user"
+  },
+  "members": [
+    {
+      "userId": " ObjectId(\"example\")",
+      "name": "John Doe",
+      "role": "administ",
+      "joinDate": "2023-03-08",
+      "dopoutDate": "2023-03-08",
+      "active": true
+    }
+  ],
+  "sprints": [
+    {
+      "spId": "Alphanumeric",
+      "sprintName": "Example Sprint",
+      "sprintDescription": "string",
+      "sprintMeta": {
+        "startDate": "date",
+        "endDate": "date",
+        "estimatedHrs": "Number",
+        "actualHrs": "Number",
+        "status": "string",
+        "createdOn": "date",
+        "createdBy": "Story creator user"
+      },
+      "leadTime": "integer",
+      "cycleTime": "intager",
+      "epics": ["eId"],
+      "stories": ["stId"],
+      "tasks": ["tId"],
+      "sprintBacklog": ["tId"],
+      "retrospectiveNotes": "string"
+    }
+  ],
+  "epics": [
+    {
+      "eId": " ObjectId(\"example\")",
+      "epicName": "epic1",
+      "epicDescription": "Example",
+      "stories": ["stId"],
+      "tasks": ["tId"],
+      "priority": "string",
+      "complexity": "string",
+      "epicMeta": {
+        "allocatedTo": "User",
+        "startDate": "date",
+        "endDate": "date",
+        "estimatedTime": "Number",
+        "actualTime": "Number",
+        "status": "string",
+        "created_on": "date",
+        "created_by": "Story creator user"
+      },
+      "relatedEntity": [
+        {
+          "type": "epic",
+          "id": "String"
+        }
+      ]
+    }
+  ],
+  "stories": [
+    {
+      "stId": " ObjectId(\"example\")",
+      "storyName": "Story1",
+      "storyDescription": "Story description",
+      "storyMeta": {
+        "assignee": "uId",
+        "allocatedTo": "User",
+        "startDate": "date",
+        "endDate": "date",
+        "estimatedTime": "Number",
+        "actualTime": "Number",
+        "status": "string",
+        "createdOn": "date",
+        "createdBy": "Story creator user"
+      },
+      "tasks": ["tId"],
+      "issues": ["tId"],
+      "relatedEntity": [
+        {
+          "type": "epic",
+          "id": "String"
+        }
+      ]
+    }
+  ],
+  "tasks": [
+    {
+      "tId": " ObjectId(\"example\")",
+      "taskName": "Task1",
+      "taskDescription": "Task Description",
+      "taskType": "Bug | CR | SubTasks",
+      "spTag": "forigen Key from sprint collection",
+      "attachments": [],
+      "taskMeta": {
+        "assignee": "string",,
+        "allocatedTo": "User",
+        "startDate": "date",
+        "endDate": "date",
+        "estimatedTime": "Number",
+        "actualTime": "Number",
+        "status": "string",
+        "created_on": "date",
+        "created_by": "Story creator user"
+      },
+      "relatedEntity": [
+        {
+          "type": "epic",
+          "id": "String"
+        }
+      ],
+      "notes": "string"
+    }
+  ],
+  "created_at": "timestamp",
+  "updated_at": "timestamp"
+}

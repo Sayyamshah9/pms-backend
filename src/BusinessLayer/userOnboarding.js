@@ -38,8 +38,8 @@ const userOnboarding = async (_reqData) => {
       _reqData = {
         ..._reqData,
         password,
-        created_at: timeStampsInst.getCreatedAt(),
-        updated_at: timeStampsInst.getUpdatedAt(),
+        createdOn: timeStampsInst.getCreatedOn(),
+        updatedOn: timeStampsInst.getUpdatedOn(),
       };
       try {
         resObj = await insertOne(collectionNameUsr, _reqData);

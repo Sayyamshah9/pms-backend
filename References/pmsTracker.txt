@@ -6,10 +6,12 @@ ____________
 - Project Init - ✔
 - JWT Authentication - ✔
 - Response Sanitization - ✔
+- Health Check APIs - 
 - JWT Refactor - 
 - Write Generic Find | Update | Create | Delete Functions  - 
 - CORS Setup - 
 - Babel Setup -
+- Logger Setup -
 - Session Setup - 
 - Request & Response Encrtyption -
 - Code Refactor - 
@@ -20,7 +22,7 @@ ____________
 - User OnBoarding - ✔
 - User Login - ✔
 - Password Hashing - ✔
-- Check for Duplicate Entries & only for nonlocal envs - ✔
+- Check for Duplicate Entries & only for non-local envs - ✔
 - User Read (p2) - 
 
 PROJECT API:

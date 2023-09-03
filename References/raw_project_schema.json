@@ -1,0 +1,101 @@
+{
+  "project": {
+    "id": "string",
+    "name": "string",
+    "description": "string",
+    "start_date": "string",
+    "end_date": "string",
+    "status": "string",
+    "owner": "string",
+    "members": ["string"],
+    "sprints": ["string"],
+    "epics": ["string"],
+    "story_points": "integer",
+    "budget": "number",
+    "risks": ["string"],
+    "issues": ["string"],
+    "version": "string",
+    "tags": ["string"],
+    "notes": "string",
+    "Milestones": ["String"]
+  },
+  "sprint": {
+    "id": "string",
+    "name": "string",
+    "description": "string",
+    "start_date": "string",
+    "end_date": "string",
+    "status": "string",
+    "epics": ["string"],
+    "stories": ["string"],
+    "tasks": ["string"],
+    "burndown_chart": "string",
+    "goal": "string",
+    "tasks_completed": ["string"],
+    "tasks_in_progress": ["string"],
+    "tasks_not_started": ["string"],
+    "blockers": ["string"],
+    "notes": "string",
+    "velocity": "integer",
+    "burndown_rate": "float",
+    "lead_time": "integer", // time from creation to completion
+    "cycle_time": "integer", // Time from Sprint Start to Sprint End
+    "retrospective_notes": "string",
+    "sprintBacklog": ["ids"]
+  },
+  "epic": {
+    "id": "string",
+    "name": "string",
+    "description": "string",
+    "stories": ["string"],
+    "tasks": ["string"],
+    "priority": "string",
+    "complexity": "string"
+  },
+  "story": {
+    "id": "string",
+    "name": "string",
+    "description": "string",
+    "acceptance_criteria": "string",
+    "estimated_time": "integer",
+    "status": "string",
+    "assignee": "string",
+    "tasks": ["string"],
+    "story_points": "integer",
+    "risks": ["string"],
+    "issues": ["string"]
+  },
+  "task": {
+    "id": "string",
+    "name": "string",
+    "description": "string",
+    "due_date": "string",
+    "status": "string",
+    "assignee": "string",
+    "relatedEntity": [
+      {
+        "type": "epic",
+        "id": "String"
+      }
+    ],
+    "dependencies": ["string"],
+    "notes": "string"
+  }
+}
+
+{
+  "members": [
+    {
+      "userId": " ObjectId(\"example\")",
+      "userEmail": "user@example.com",
+      "role": "administ",
+      "name": "John Doe",
+      "avatar": "https://example.com/avatar.jpg",
+      "bio": "John Doe is a software engineer at Google. He is passionate about building great products.",
+      "location": "Mountain View, CA",
+      "joinDate": "2023-03-08",
+      "active": true
+    }
+  ]
+}
+
