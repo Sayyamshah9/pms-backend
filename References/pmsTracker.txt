@@ -28,17 +28,17 @@ ____________
 PROJECT API:
 ____________
 
-- Create Project - 
-- Read Project - 
-- Update Project - 
+- Create Project - ✔
+- Read Project - ✔
+- Update Project - ✔
 - Delete Project - 
 
 EPIC | STORY | TASKS:
 ____________
 
-- Create -
-- Read - 
-- Update -
+- Create - ✔
+- Read - ✔
+- Update - ✔
 - Delete - 
 
 LOGS:
