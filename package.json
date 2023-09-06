@@ -4,8 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "npx babel src/server.js --out-dir lib",
-    "start:local": "nodemon src/server.js"
+    "start:babel": "npx babel src/server.js --out-dir lib",
+    "start": "nodemon src/server.js"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
@@ -13,6 +13,7 @@
     "express": "^4.18.2",
     "jsonwebtoken": "^9.0.1",
     "mongodb": "^5.7.0",
+    "morgan": "^1.10.0",
     "nodemon": "^3.0.1",
     "useragent": "^2.3.0"
   }

@@ -1,6 +1,8 @@
 const { MongoClient } = require("mongodb");
 
-const client = new MongoClient("mongodb://127.0.0.1:27017/pmsLocalDb", {
+const DB_URL = process.env.DB_URL || "mongodb://127.0.0.1:27017/pmsLocalDb";
+
+const client = new MongoClient(DB_URL, {
   useNewUrlParser: true,
   monitorCommands: true,
 });
