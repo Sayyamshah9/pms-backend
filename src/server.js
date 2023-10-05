@@ -2,12 +2,14 @@ const express = require("express");
 require("dotenv").config();
 const { createConnection } = require("./DataLayer/dbQueries");
 const morgan = require("morgan");
+const cors = require("cors");
 // const useragent = require("useragent");
 const app = express();
 
 const PORT = process.env.PORT || 3001;
 
 app.use(express.json());
+app.use(cors());
 app.use("/api/v1", require("./Routers/index"));
 
 // middleware for loging - (nginx req check)
